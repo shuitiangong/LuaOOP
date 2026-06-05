@@ -5,7 +5,7 @@ local function createType(typeName)
     local typeMeta = {}
     typeMeta.typeName = typeName
 
-    local typeString = (typeName or "anonymousType") .. "()" .. tostring(theType) .. ")"
+    local typeString = (typeName or "anonymousType") .. "(" .. tostring(theType) .. ")"
     typeMeta.__tostring = function (_)
         return typeString
     end
